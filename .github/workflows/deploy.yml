@@ -31,10 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build (demo mode)
-        run: npm run build
-        env:
-          VITE_DEMO_MODE: "true"
-          VITE_APP_NAME: Gleamio
+        run: npx tsc -b && npx vite build --mode demo
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

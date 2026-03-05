@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="public/gleamio-icon.svg" width="80" height="80" alt="Gleamio">
-</p>
-
-<h1 align="center">Gleamio</h1>
+<h1 align="center">✨ Gleamio</h1>
 
 <p align="center">
   <strong>Free & Open-Source Interactive Content Creation Platform</strong>
