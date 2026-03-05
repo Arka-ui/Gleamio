@@ -1,0 +1,43 @@
+{
+  "name": "gleamio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Free & open-source interactive content creation platform",
+  "license": "CC-BY-NC-4.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "server": "node server/index.js",
+    "dev:full": "concurrently \"npm run dev\" \"npm run server\"",
+    "lint": "eslint .",
+    "deploy:demo": "vite build --mode demo && gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "zustand": "^4.5.4",
+    "uuid": "^10.0.0",
+    "lucide-react": "^0.424.0",
+    "framer-motion": "^11.3.24",
+    "react-colorful": "^5.6.1",
+    "html-to-image": "^1.11.11",
+    "file-saver": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
+    "@types/file-saver": "^2.0.7",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "gh-pages": "^6.1.1"
+  }
+}
